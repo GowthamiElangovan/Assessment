@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+      
+	<bean id="laptop" class="com.collabera.assessment.Laptop">
+		<property name="id" value="5"></property>
+		<property name="name" value="Dell"></property>
+	</bean>
+
+	<bean id="employee" class="com.collabera.assessment.Employee">
+		<constructor-arg name="eid" value="7"></constructor-arg>
+		<constructor-arg name="name" value="Gowthami"></constructor-arg>
+	</bean>
+
+
+</beans>
