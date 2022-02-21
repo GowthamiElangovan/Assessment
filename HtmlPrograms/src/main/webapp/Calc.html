@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function addition(a){
+    return function(y){
+        return a+y;
+    };
+}
+var first=addition(5);
+var second=addition(10);
+console.log("5+15 = "+first(15));   
+console.log("10+30 = "+second(30));
+</script>
+</body>
+</html>
