@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>multiple-choice quiz form</title>
+<script>
+function fun()
+{
+var X=" ";
+var s=0;
+if(document.getElementById("1").checked)
+{
+X+="your first answer is correct";
+s=s+1;
+}
+else
+{
+X+="your first answer is wrong";
+}
+if(document.getElementById("4").checked)
+{
+X+="your second answer is correct";
+s=s+1;
+}
+else
+{
+X+="your second answer is wrong";
+}
+if(document.getElementById("8").checked)
+{
+X+="your third answer is correct";
+s=s+1;
+}
+else
+{
+X+="your third answer is wrong";
+}
+if(document.getElementById("11").checked)
+{
+X+="your fourth answer is correct";
+s=s+1;
+}
+else
+{
+X+="your fourth answer is wrong";
+}
+document.writeln(X);
+document.writeln("total="+s+"/4");
+}
+</script>
+</head>
+<body style="background-color: pink">
+<h3> Quiz </h3>
+<form method="post">
+Check the answer to each multiple-choice question, and click on the "Send Form" button to submit the information.
+<P>1.Expand OOP?<BR>
+<input type="radio" name="1.Expand OOP?" id="1" value="Object oriented programming">Object oriented programming<BR>
+<input type="radio" name="1.Expand OOP?" id="2" value="Object oriented project">Object oriented project<BR>
+<input type="radio" name="1.Expand OOP?" id="3"  value="Object oriented problem">Object oriented problem<BR>
+</p>
+<P>2.Recursion means?<BR>
+<input type="radio" name="2.Recursion means? " id="4"  value="Function calls itself">Function calls itself<BR>
+<input type="radio" name="2.Recursion means? " id="5"  value="Function calling interface">Function calling interface<BR>
+<input type="radio" name="2.Recursion means? " id="6"  value="Function cell interface">Function cell interface<BR>
+</p>
+<P>3.Expand HTML?<BR>
+<input type="radio" name="3.Expand html?" id="7"  value="hypertext markup level">hypertext markup level<BR>
+<input type="radio" name="3.Expand html?" id="8"  value="hypertext markup language">hypertext markup language<BR>
+<input type="radio" name="3.Expand html?" id="9"  value="hypertext markup level">hypertext markup level<BR>
+</p>
+<P>4.Expand WDT?<BR>
+<input type="radio" name="4.Expand WDT?" id="10"  value="World design Technology">World design Technology<BR>
+<input type="radio" name="4.Expand WDT?" id="11"  value="Web design Technology">Web design Technology<BR>
+<input type="radio" name="4.Expand WDT?" id="12"  value="Web design training">Web design training<BR>
+</p>
+<br>
+<br>
+<input type="submit" value="Send Form">
+<input type="reset" value="Clear Form">
+<input type="button" value="answer"  onclick="fun()">
+</form>
+</body>
+</html>
